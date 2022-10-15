@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Conversor unidades de medidas de temperatura</title>
+</head>
+<center>
+<body>
+    <h2>Converter temperatura</h2>
+    <div class="valor">
+        <p>Valor a ser convertido:</p>
+        <input value="0" type="number" id="valor">
+        <label for="grau"></label>
+            <select id="grau-vlr">
+                <option value="celsius">Celsius (C)</option>
+                <option value="fahrenheit">Fahrenheit (F)</option> 
+                <option value="kelvin">Kelvin (K)</option>
+            </select><br>
+    </div>
+    <div class="conv">
+        <text>Converter para:</text>
+             <select id="grau-cont">
+                <option value="celsius">Celsius (C)</option>
+                <option value="fahrenheit" selected="">Fahrenheit (F)</option> 
+                <option value="kelvin">Kelvin (K)</option>
+            </select><br>
+    </div>
+        <br>
+        <h4 class="resultado">0°C é igual a 32.00°F</h4>
+        <button class="button" onclick="converter()">Converter</button><br>
+</body>
+</center>
+</html>
